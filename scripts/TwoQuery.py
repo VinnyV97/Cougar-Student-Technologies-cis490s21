@@ -2,27 +2,35 @@ import os
 import re
 import urllib.request
 import json
+import requests
 
 directory = r"C:\Users\Vinny\Documents\CIS 490\prototype\streets" # set to own directory
 API_key = "&key=" + "AIzaSyD6XYTJYrV1g9BZLiTLnwAkFgpASFg_MJY" # set to own key
-size = "300x300" 
+size = "640x640" # 640x640 is max 
 
-# requesting metadata before image
+# called first to request metadata and check if images are available
 def GetMeta(address, directory):
   base = "https://maps.googleapis.com/maps/api/streetview/metadata?"
   location = "&location=" + address
   url = base + location + API_key
-  file = address + ".json"
-  urllib.request.urlretrieve(url, os.path.join(directory, file)) #saves metadata as .json file into directory
+  file = address + ".json" #formats .json file to be saved 
+  meta = requests.get(url) #requests metadata from GSV API
+  meta_info = meta.json()  
+  meta_status = meta_info['status'] 
+  if meta_status == 'OK' : 
+    print("Request found")
+    print(meta_info)
+    
+    with open(os.path.join(directory, file), 'w') as f: #saves metadata into file in directory
+      json.dump(meta_info, f)  
 
-  """
-  if file.status.OK
-    print("GetStreet(address, directory)"
-  else
-    print("No image per request")
-  """
+    GetStreet(address, directory) #requests images 
 
-# image request
+  else :
+    print("Request cannot be made")
+    print(meta_info)
+
+# ran only if status == ok 
 def GetStreet(address, directory):
   base = "https://maps.googleapis.com/maps/api/streetview?size=" + size
   location = "&location=" + address 
@@ -52,8 +60,8 @@ address = address.replace(" ", "") #removes whitespace in input
 
 GetMeta(address, directory) #run for metadata first
 
-GetStreet(address, directory) #run if you just want the images
+#GetStreet(address, directory) #run if you just want the images
 
 #for running with OSMnx
 #for i in route
-  #GetPic(route[i], directory)
+  #GetMeta(route[i], directory)
