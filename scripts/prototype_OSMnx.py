@@ -4,16 +4,19 @@ import numpy as np
 from shapely.geometry import mapping
 from IPython.display import Image
 from collections import defaultdict
-from IPython import get_ipython
-get_ipython().run_line_magic('matplotlib', 'inline')
+%matplotlib inline
 ox.config(log_console=True, use_cache=True)
 ox.__version__
 
-G = ox.graph_from_place('San Marcos, California, USA', network_type='drive')
+G = ox.graph_from_point((33.118054, -117.078971), dist = 50, network_type = 'all') 
+ox.plot_graph(G)
 nodes,edges = ox.graph_to_gdfs(G)
 list = G.nodes
-
+coord = []
 for i in list:
-    print(G.nodes[i]['y'])
-    print(G.nodes[i]['x'])
-    print("\n")
+    lat = str(G.nodes[i]['y'])
+    long = str(G.nodes[i]['x'])
+    point = lat + ',' + long 
+    coord.append(point)
+    
+print(coord)
