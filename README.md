@@ -19,7 +19,7 @@ Recommended by the previous team Stoic Solutions, we implemented an open source 
 
 OSMnx detecting all the streets in San Marcos
 
-### [prototype_final.ipynb](scripts/protoype_final.ipynb)
+### [prototype_final.ipynb](scripts/prototype_final.ipynb)
 This script implements both OSMnx and the Google Street View API to collect a list of latitude and longtitude coordinate pairs and use those pairs to request images from the Google Street View API.
 
 ### [prototype_OSMnx.ipynb](scripts/prototype_OSMnx.ipynb)
