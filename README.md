@@ -6,7 +6,7 @@ Instructor: Dr. Shaun-inn Wu
 Client: Dr. Wesley Shultz
 
 # Project Outline
-Cougar Student Technologies was tasked with designing an software solution to retrieve multiple images of streets from Google Street View to be processed by a litter detection algorithm.  
+Cougar Student Technologies was tasked with designing a software solution to retrieve multiple images of streets from Google Street View to be processed by a litter detection algorithm.  
 # Dependencies
 - Google Street View API key [Google Cloud Platform](https://cloud.google.com/)
 - Python 3.6 or newer [Python Download](https://www.python.org/downloads/)
@@ -30,7 +30,7 @@ The metadata is requested first before requesting the image, then both the metad
 
 ![CSUSM](Images/CSUSM_Example.png)
 
-User prompts allow for multiple ways to create the street networks, including an entire city. Once the network and nodes have been created, the user is prompted to input a sample size, to randomly choose which coordinates are chosen. The request status is printed to see if there is a valid image available from Google Street View and the image and metadata is stored in the directory. 
+User prompts allow for multiple ways to create the street networks, including an entire city. Once the network and nodes have been created, the user is prompted to input a sample size to randomly choose which coordinates are chosen. The request status is printed to see if there is a valid image available from Google Street View and the image and metadata is stored in the directory. 
 
 *Note in the above example, any decision to use an address or coordinate must be accompanied by a distance value, to designate how far  to create the street network.
 # Scripts
