@@ -35,16 +35,16 @@ User prompts allow for multiple ways to create the street networks, including an
 *Note in the above example, any decision to use an address or coordinate must be accompanied by a distance value, to designate how far  to create the street network.
 # Scripts
 ### [prototype_final.ipynb](scripts/prototype_final.ipynb)
-This script implements both OSMnx and the Google Street View API to collect a list of latitude and longtitude coordinate pairs and use those pairs to request images from the Google Street View API.
+This script implements both OSMnx and the Google Street View API to collect a list of latitude and longtitude coordinate pairs and use those pairs to request images from the Google Street View API. It combines protoype_2.py and prototype_OSMnx.ipynb together. 
 
 ### [prototype_OSMnx.ipynb](scripts/prototype_OSMnx.ipynb)
 This script demonstrates how to use OSMnx within the context of this project. OSMnx can create a street network with a city, address, or coordinate pair. The street network generates nodes at each intersection which are accompanied by the latitude and longtitude of the node. We simply pull the lat and long of each node and create a list of coordinate pairs. 
 
 ### [prototype_1.py](scripts/prototype_1.py)
-This script inputs an address or coordinate pair and requests the metadata and image from the Google Street View API. The image and metadata are stored in a defined directory path.
+This script prompts a user input an address or coordinate pair and requests the metadata and image using the Google Street View API. The image and metadata are stored in a defined directory path.
 
 ### [prototype_2.py](scritps/prototype_2.py)
-Version 2 functions similarly to version 1 except the script will request an image 4 times. Each time the field of view is rotated 90 degrees to obtain a 360 view of a single location. 
+Version 2 functions similarly to version 1 except the script will request an 4 images of the location. Each time the field of view is rotated 90 degrees to obtain a 360 view of a single location. The metadata and image are stored in the directory path. 
 # Additional Resources
 [OSMnx User Reference](https://osmnx.readthedocs.io/en/stable/)
 
