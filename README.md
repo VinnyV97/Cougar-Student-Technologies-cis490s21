@@ -1,1 +1,1 @@
-# cis490S21
+# Cougar Student Technologies
