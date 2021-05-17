@@ -4,8 +4,8 @@ import urllib.request
 import json
 import requests
 
-directory = r"C:\Users\Vinny\Documents\CIS 490\prototype\streets" # set to own directory
-API_key = "&key=" + "AIzaSyD6XYTJYrV1g9BZLiTLnwAkFgpASFg_MJY" # set to own key
+directory = "" # set to your own local directory
+API_key = "&key=" + "" # set to own API key
 size = "640x640" # 640x640 is max 
 
 # called first to request metadata and check if images are available
