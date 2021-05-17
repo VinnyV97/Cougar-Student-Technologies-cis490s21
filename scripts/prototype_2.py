@@ -4,6 +4,13 @@ import urllib.request
 import json
 import requests
 
+"""
+This script will query the user for an address or lat/long coordinate
+and will request the metadata and image from Google Street View
+This script however will request 4 images of the location by turning the 
+positioning of the camera in each cardinal direction
+"""
+
 directory = "" # set to your own local directory
 API_key = "&key=" + "" # set to own API key
 size = "640x640" # 640x640 is max 
@@ -62,6 +69,3 @@ GetMeta(address, directory) #run for metadata first
 
 #GetStreet(address, directory) #run if you just want the images
 
-#for running with OSMnx
-#for i in route
-  #GetMeta(route[i], directory)
