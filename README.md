@@ -1,4 +1,6 @@
 # Automated Image Retrieval Program
+Cougar Student Technologies
+
 CSUSM Spring 2021
 
 Instructor: Dr. Shaun-inn Wu
