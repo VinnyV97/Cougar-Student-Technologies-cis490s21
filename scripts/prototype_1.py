@@ -4,6 +4,10 @@ import json
 #import matplotlib.pyplot as plt
 #import matplotlib.image as mpimg
 
+"""
+This script will take in a single input as an address or lat/long coordinate
+and will request the metadata and image from GoogleStreetView API
+"""
 
 class StreetViewer(object):
     def __init__(self, api_key, location, size="640x640", 
@@ -99,7 +103,6 @@ class StreetViewer(object):
     '''
 address = input("Please type an address or coordinate to query: ")
 
-gwu_viewer = StreetViewer(api_key="AIzaSyDp0ue8PwnSDCSENWNTHBu7pfwWl20u6h0",
-                           location= address)
+gwu_viewer = StreetViewer(api_key= "", location= address)  # enter your own API key
 gwu_viewer.get_meta()
 gwu_viewer.get_pic()
