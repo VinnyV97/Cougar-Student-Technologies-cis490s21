@@ -7,7 +7,7 @@ import json
 
 class StreetViewer(object):
     def __init__(self, api_key, location, size="640x640", 
-                 folder_directory=(r'C:/Users/Vinny/Documents/prototype/streets'), verbose=True):
+                 folder_directory=(), verbose=True): # enter your own local directory here
         """
         This class handles a single API request to the Google Static Street View API
         api_key: obtain it from your Google Cloud Platform console
