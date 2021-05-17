@@ -22,7 +22,10 @@ Each white dot in the street network above is a node created to map out intersec
 
 These coordinates were pulled and compiled into a list, which was implemented to request 4 images for each coordinate pair.
 
-A Google Street View image request is an HTTP URL. The URL requires the location as parameters. Other parameters such as the image size and heading are used to produce 4 images.  
+A Google Street View image request is an HTTP URL. The URL requires the location as parameters. Other parameters such as the image size and heading are used to produce 4 images. 
+
+[Information on Google Street View API](https://developers.google.com/maps/documentation/streetview/overview)
+
 The metadata is requested first before requesting the image, then both the metadata and image is saved into the defined directory path.
 
 ![CSUSM](Images/CSUSM_Example.png)
