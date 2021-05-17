@@ -1,2 +1,3 @@
 # Cougar Student Technologies
-Automated Image Retrieval Program
+# Automated Image Retrieval Program
+
