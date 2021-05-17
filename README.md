@@ -45,3 +45,13 @@ This script inputs an address or coordinate pair and requests the metadata and i
 
 ### [prototype_2.py](scritps/prototype_2.py)
 Version 2 functions similarly to version 1 except the script will request an image 4 times. Each time the field of view is rotated 90 degrees to obtain a 360 view of a single location. 
+# Additional Resources
+[OSMnx User Reference](https://osmnx.readthedocs.io/en/stable/)
+
+[OSMnx Install Guide](https://geoffboeing.com/2017/02/python-getting-started/) (*this is from Geoff Boeing)
+
+[Google Street View Image Metadata Information](https://developers.google.com/maps/documentation/streetview/metadata)
+
+[OSMnx Github](https://github.com/gboeing/osmnx)
+
+[Stoic Solutions Github](https://github.com/stoicsolutions/cis490_2020_project)
