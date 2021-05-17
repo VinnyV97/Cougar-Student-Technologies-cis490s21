@@ -18,9 +18,9 @@ Recommended by the previous team Stoic Solutions, we implemented an open source 
 
 OSMnx detecting all the streets in San Marcos
 # Implementation
-The street network created by OSMnx used nodes to map out intersections. Each node consisted of metadata including its latitude and longtitude.
+Each white dot in the street network above is a node created to map out intersections. Each node consisted of metadata including its latitude and longtitude.
 
-These coordinates were pulled and compiled into a list, which was implemented to request 4 images for each coordinate pair. 
+These coordinates were pulled and compiled into a list, which was implemented to request 4 images for each coordinate pair.
 The metadata is requested first before requesting the image, then both the metadata and image is saved into the defined directory path.
 
 ![CSUSM](Images/CSUSM_Example.png)
