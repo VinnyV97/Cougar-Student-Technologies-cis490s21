@@ -45,7 +45,7 @@ This script demonstrates how to use OSMnx within the context of this project. OS
 ### [prototype_1.py](scripts/prototype_1.py)
 This script demonstrates how to use the Google Street View API by prompting an input for an address or coordinate pair and requesting the metadata and image. The HTTP URL creates the request and the image and metadata are stored in a defined directory path.
 
-### [prototype_2.py](scritps/prototype_2.py)
+### [prototype_2.py](scripts/prototype_2.py)
 Version 2 functions similarly to version 1 except the script will request 4 images of the location. Each time the field of view is rotated 90 degrees to obtain a 360 view of a single location. The metadata and image are stored in the directory path. 
 # Additional Resources
 [OSMnx User Reference](https://osmnx.readthedocs.io/en/stable/)
