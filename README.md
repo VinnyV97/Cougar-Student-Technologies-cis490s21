@@ -36,6 +36,9 @@ User prompts allow for multiple ways to create the street networks, including an
 
 *Note in the above example, any decision to use an address or coordinate must be accompanied by a distance value, to designate how far  to create the street network.
 # Scripts
+
+*Note any script that utilizes GoogleStreetView API requires YOUR OWN API key generated from the Google Cloud Platform. A Google account is needed. 
+
 ### [prototype_final.ipynb](scripts/prototype_final.ipynb)
 This script implements both OSMnx and the Google Street View API to collect a list of latitude and longtitude coordinate pairs and use those pairs to request images from the Google Street View API. It combines protoype_2.py and prototype_OSMnx.ipynb together. 
 
